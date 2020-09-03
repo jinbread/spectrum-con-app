@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {motion} from 'framer-motion'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,9 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <motion.h2 className={styles.title} initial={{scale: 1}} animate={{scale: 1.3}} transition={{duration: 2, yoyo: Infinity}}>
+          Welcome to <a href="https://www.designspectrum.org/">Spectrum Con 2020</a>
+        </motion.h2>
 
         <p className={styles.description}>
           Get started by editing{' '}
